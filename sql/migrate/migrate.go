@@ -728,7 +728,7 @@ func (d *LocalDir) Files() ([]File, error) {
 	return ret, nil
 }
 
-// Stmts implements Scanner.Stmts. It reads migration file line-by-line and expects a statement to be one line only. // TODO(masseelch): add multi-line statement support
+// Stmts implements Scanner.Stmts. It reads migration file line-by-line and expects a statement to be one line only.
 func (d *LocalDir) Stmts(f File) ([]string, error) {
 	var (
 		stmts []string
